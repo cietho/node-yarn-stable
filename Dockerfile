@@ -8,9 +8,5 @@ RUN curl -fSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$
     && ln -snf /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg \
     && rm yarn-v$YARN_VERSION.tar.gz
 
-EXPOSE 3000:3000
-EXPOSE 3001:3001
-EXPOSE 9000:9000
-
 WORKDIR /app
 
